@@ -1,0 +1,6 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.tex": "${capture}.aux, ${capture}.bbl, ${capture}.blg, ${capture}.fdb_latexmk, ${capture}.fls, ${capture}.log, ${capture}.nav, ${capture}.out, ${capture}.pdf, ${capture}.snm, ${capture}.synctex.gz, ${capture}.toc, ${capture}.lof, ${capture}.lot, ${capture}.vrb"
+  }
+}

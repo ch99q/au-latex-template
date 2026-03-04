@@ -1,0 +1,145 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Encoding & language ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% --- Font ---
+\usepackage{mathptmx}
+
+% --- Page geometry ---
+\usepackage[top=3.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, headheight=45pt]{geometry}
+
+% --- Graphics ---
+\usepackage{graphicx}
+\graphicspath{{assets/}}
+
+% --- Header & footer ---
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[height=1.2cm]{aulogo_dk_var2_blaa}}
+\rhead{%
+  \parbox[b][1.2cm][c]{0.4\textwidth}{%
+    \raggedleft\small
+    GAI Declaration \\
+    \projectname
+  }%
+}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% --- Hyperlinks ---
+\usepackage[hidelinks]{hyperref}
+
+% --- Lists ---
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+% --- Checkbox commands ---
+% Use \checked for ticked boxes, \unchecked for empty boxes
+\newcommand{\checked}{$\boxtimes$}
+\newcommand{\unchecked}{$\square$}
+
+% --- Paragraph formatting ---
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% --- Metadata (fill in per project) ---
+\newcommand{\reporttitle}{Report Title}
+\newcommand{\projectname}{Project Name}
+\newcommand{\authorA}{Author 1}
+\newcommand{\authorB}{Author 2}
+\newcommand{\studentidA}{AU ID 1}
+\newcommand{\studentidB}{AU ID 2}
+
+% ============================================================
+\begin{document}
+
+\thispagestyle{fancy}
+
+{\large\bfseries Declaration of Generative AI (GAI) Usage\par}
+
+\vspace{0.5cm}
+
+\begin{tabular}{@{}ll}
+  \textbf{Title:}      & \reporttitle \\
+  \textbf{Project:}    & \projectname \\
+  \textbf{Author(s):}  & \authorA\ (\studentidA), \authorB\ (\studentidB) \\
+  \textbf{Date:}       & \today \\
+\end{tabular}
+
+\vspace{1cm}
+
+% ---- Section 1: Declaration ----
+{\normalsize\bfseries 1. Declaration\par}
+\vspace{2pt}
+I/we have used generative artificial intelligence (GAI) in the
+preparation of this project.
+
+\vspace{0.5cm}
+
+% ---- Section 2: Tools used ----
+{\normalsize\bfseries 2. GAI Tools Used\par}
+\vspace{2pt}
+% List all GAI tools used, including version numbers.
+\begin{itemize}[nosep]
+  \item \textit{Example: ChatGPT (GPT-4o, OpenAI)}
+  \item \textit{Example: Claude (Claude Opus 4, Anthropic)}
+  \item \textit{Example: GitHub Copilot}
+\end{itemize}
+
+\vspace{0.5cm}
+
+% ---- Section 3: How GAI was used ----
+{\normalsize\bfseries 3. Application of GAI Tools\par}
+\vspace{2pt}
+The following indicates how GAI tools were used. Mark the relevant
+areas and briefly describe for each point how information was
+generated and how the output was used in the assignment.
+
+\vspace{0.3cm}
+
+% Change \unchecked to \checked for each applicable item
+\begin{itemize}[nosep, leftmargin=1.5em]
+  \item[\unchecked] Brainstorming and formulating the problem statement
+  \item[\unchecked] Selecting theory and methodology
+  \item[\unchecked] Feedback on own text
+  \item[\unchecked] Generating alternative phrasings
+  \item[\unchecked] Getting started with writing
+  \item[\unchecked] Understanding a topic better
+  \item[\unchecked] Assistance in the reading process
+  \item[\unchecked] GAI used as a subject in the project
+  \item[\unchecked] Identifying knowledge gaps
+  \item[\unchecked] Starting literature searches
+  \item[\unchecked] Programming tasks
+  \item[\unchecked] Data analysis
+  \item[\unchecked] Creating figures
+  \item[\unchecked] Proofreading
+  \item[\unchecked] Other usage: \hrulefill
+\end{itemize}
+
+\vspace{0.5cm}
+
+% ---- Section 4: Detailed description ----
+{\normalsize\bfseries 4. Description of Usage\par}
+\vspace{2pt}
+% For each checked area above, describe how GAI was used: what input
+% was given, what output was generated, and how it was applied in
+% the assignment.
+
+\textit{For each relevant area, briefly describe how the information
+was generated (input) and explain how the output was used in the
+assignment.}
+
+\vspace{1cm}
+
+% Write your description here:
+
+
+
+\end{document}
