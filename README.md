@@ -21,7 +21,7 @@ Unofficial LaTeX template for reports at Aarhus University. Follows the formatti
 ### 1. Clone or copy the template
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/au-latex-template.git my-report
+git clone https://github.com/ch99q/au-latex-template.git my-report
 cd my-report
 ```
 
