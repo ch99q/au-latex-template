@@ -90,10 +90,10 @@ If you used generative AI tools (ChatGPT, Copilot, Claude, etc.) while working o
 
 ```latex
 % Before:
-\item[\unchecked] Til programmeringsopgaver
+\item[\unchecked] Programming tasks
 
 % After:
-\item[\checked] Til programmeringsopgaver
+\item[\checked] Programming tasks
 ```
 
 > If you have **not** used GAI tools, you do not need to submit a declaration.
