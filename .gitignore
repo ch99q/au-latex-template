@@ -13,6 +13,8 @@
 *.blg
 *.bcf
 *.run.xml
+*.nav
+*.snm
 
 
 # Editor files
