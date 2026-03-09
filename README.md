@@ -13,6 +13,7 @@ Unofficial LaTeX template for reports at Aarhus University. Follows the formatti
 | File | Description |
 |------|-------------|
 | `template.tex` | Main report template with example content |
+| `presentation.tex` | Beamer presentation template (16:9, light theme) |
 | `declaration.tex` | GAI declaration form (required if you used AI tools) |
 | `assets/` | AU logo and other assets |
 
@@ -48,6 +49,47 @@ Open `template.tex` and update the metadata section near the top:
 pdflatex template.tex
 pdflatex template.tex   # run twice for references
 ```
+
+## Presentation Template
+
+`presentation.tex` is a Beamer template styled to match AU's visual identity — 16:9 aspect ratio, AU blue colour palette, and sharp flat design.
+
+Open `presentation.tex`, update the metadata at the top, and compile:
+
+```bash
+pdflatex presentation.tex
+```
+
+### Available commands
+
+| Command | Effect |
+|---------|--------|
+| `\sectionslide{01}{Title}` | Section divider slide with large number and blue bar |
+| `\stat{value}{label}` | Stat card with large number (use three in a row) |
+| `\callout{Title:}{Text}` | Callout box with blue left border |
+| `\done` / `\ongoing` / `\planned` | Colour-coded status labels for timelines |
+
+## Using with Overleaf
+
+You can use this template on [Overleaf](https://www.overleaf.com) without cloning the repository.
+
+### Option 1: Upload as ZIP
+
+1. Download or clone this repository as a ZIP
+2. Go to Overleaf and click **New Project** > **Upload Project**
+3. Upload the ZIP file — Overleaf will set everything up automatically
+
+### Option 2: Start from a blank project
+
+1. Create a new blank project on Overleaf
+2. Copy the contents of `template.tex` (or `presentation.tex`) into `main.tex`
+3. Create a folder called `assets` in the Overleaf file tree
+4. Download the AU logo and upload it to the `assets` folder:
+   - [aulogo_dk_var2_blaa.png](https://raw.githubusercontent.com/ch99q/au-latex-template/main/assets/aulogo_dk_var2_blaa.png) (for presentations)
+   - [aulogo_dk_var2_blaa.pdf](https://raw.githubusercontent.com/ch99q/au-latex-template/main/assets/aulogo_dk_var2_blaa.pdf) (for reports — PDF gives sharper output in print)
+5. If using the GAI declaration, also copy `declaration.tex` into the project
+
+> **Tip:** Overleaf compiles automatically, so you do not need to run `pdflatex` manually.
 
 ## Template Structure
 
